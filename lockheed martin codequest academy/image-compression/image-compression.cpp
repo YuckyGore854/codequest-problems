@@ -15,7 +15,6 @@ int main(){
 		int nums;
 		float min, max;
 		cin >> nums;
-		//cout << "\n";
 		vector<float> vals;
 		for (int i = 0; i < nums; i++) {
 			float philly;
@@ -29,7 +28,6 @@ int main(){
 		for (int i = 0; i < vals.size(); i++) {
 			vals[i] = (vals[i] - min)/(max-min)*255;
 			cout << int(floor(vals[i]+0.5)) << "\n";
-			//cout << int(floor(vals.at(i)+0.5)) << endl;
 		}
 	}
 }
